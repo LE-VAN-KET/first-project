@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head'); -%>
+</head>
+<body>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope='col'>id</th>
+                <th scope='col'>Name</th>
+                <th scope='col'>Email</th>
+                <th scope='col'>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= user.id %></td>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                <td><%= user.address %></td>
+            </tr>
+        </tbody>
+    </table>
+    <%- include('js'); -%>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+              <div class="card login-card">
+                  <div class="card-header">
+                      <h3 class="card-title">Please Sign In</h3>
+                  </div>
+                  <%if (message) {%> 
+                    <div class="alert alert-success">
+                      <%= message %>
+                    </div>
+                  <%}%>
+                  <!-- if errors -->
+                  <ul class="errors  list-unstyled">
+                    <% if(errors) { %>
+                        <% errors.forEach( error => { %>
+                            <li class="alert alert-danger">
+                                <%= error.msg %>
+                            </li>
+                        <% }) %>
+                     <% } %>
+                  </ul> 
+                    
+                  <div class="card-body">
+                      <form action="/admin/auth/login" method="POST">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input class="form-control" id="email" placeholder="anhle1512001@gmail.com" type="text" name="email" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input class="form-control" id="password" placeholder="Password" type="password" name="password" required>
+                        </div>
+                        <div class="checkbox">
+                          <label><input name="remember" type="checkbox" value="Remember Me"/>Remember Me</label>
+                        </div>
+                        <!-- Change this to a button or input when using this as a form-->
+                        <button class="btn btn-primary btn-success btn-block" type="submit">Login</button>
+                      </form>
+                  </div>
+                  <a href='/admin/auth/register' class='text-capitalize text-center'>Register</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

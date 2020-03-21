@@ -1,0 +1,112 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand"href="#">Startmin</a>
+    <a class="text-1rem navbar-brand mr-auto" href="#">
+        <i class="fa fa-home"aria-hidden="true"></i>Website</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item">
+                <form class="m-3">
+                    <div class="input-group"><input class="form-control" type="text" placeholder="Search" /><span
+                            class="input-group-append"><button class="btn btn-primary" type="button"><i
+                                    class="fa fa-search"></i></button></span></div>
+                </form>
+            </li>
+            <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard"><a
+                    class="nav-link py-2" href="#"><i class="fa fa-fw fa-dashboard"></i><span
+                        class="nav-link-text">Dashboard</span></a></li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts"><a
+                    class="nav-link nav-link-collapse collapsed py-lg-2" data-toggle="collapse" href="#collapseCharts"
+                    data-parent="#exampleAccordion"><i class="fa fa-bar-chart-o fa-fw"></i><span
+                        class="nav-link-text">Charts</span></a>
+                <ul class="sidenav-second-level collapse" id="collapseCharts">
+                    <li><a class="py-lg-2" href="flot.html">Flot Charts</a></li>
+                    <li><a class="py-lg-2" href="morris.html">Morris.js Charts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"><a class="nav-link py-lg-2"
+                    href="/admin/table"><i class="fa fa-fw fa-table"></i><span class="nav-link-text">Tables</span></a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="forms"><a class="nav-link py-lg-2"
+                    href="forms.html"><i class="fa fa-edit fa-fw"></i><span class="nav-link-text">Forms</span></a></li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="UIelement"><a
+                    class="nav-link nav-link-collapse collapsed py-lg-2" data-toggle="collapse"
+                    href="#collapseUIelement" data-parent="#exampleAccordion"><i class="fa fa-wrench fa-fw"></i><span
+                        class="nav-link-text">UI Elements</span></a>
+                <ul class="sidenav-second-level collapse" id="collapseUIelement">
+                    <li><a class="py-lg-2" href="/panels-wells">Panels and Wells</a></li>
+                    <li><a class="py-lg-2" href="/buttons">Buttons</a></li>
+                    <li><a class="py-lg-2" href="/notifications">Notifications</a></li>
+                    <li><a class="py-lg-2" href="/typography">Typography</a></li>
+                    <li><a class="py-lg-2" href="/icons">Icons</a></li>
+                    <li><a class="py-lg-2" href="/grid">Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Multi-Level Dropdown"><a
+                    class="nav-link nav-link-collapse collapsed py-lg-2" data-toggle="collapse"
+                    href="#collapseMulti-LevelDropdown" data-parent="#exampleAccordion"><i
+                        class="fa fa-fw fa-file"></i><span class="nav-link-text">Multi-Level Dropdown</span></a>
+                <ul class="sidenav-second-level collapse" id="collapseMulti-LevelDropdown">
+                    <li><a class="py-lg-2" href="login.html">Second Level Item</a></li>
+                    <li><a class="py-lg-2" href="register.html">Second Level Item</a></li>
+                    <li><a class="nav-link-collapse collapsed py-lg-2" data-toggle="collapse"
+                            href="#collapseMulti2">Third Level</a>
+                        <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                            <li><a class="py-lg-2" href="#">Third Level Item</a></li>
+                            <li><a class="py-lg-2" href="#">Third Level Item</a></li>
+                            <li><a class="py-lg-2" href="#">Third Level Item</a></li>
+                            <li><a class="py-lg-2" href="#">Third Level Item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sample Pages"><a
+                    class="nav-link nav-link-collapse collapsed py-lg-2" data-toggle="collapse"
+                    href="#collapsesamplePages" data-parent="#exampleAccordion"><i class="fa fa-files-o fa-fw"></i><span
+                        class="nav-link-text">Sample Pages</span></a>
+                <ul class="sidenav-second-level collapse" id="collapsesamplePages">
+                    <li><a class="py-lg-2" href="/blank">Blank Page</a></li>
+                    <li><a class="py-lg-2" href="/auth/login">Login Page</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item"><a class="nav-link text-center" id="sidenavToggler"><i
+                        class="fa fa-fw fa-angle-left"></i></a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fa fa-fw fa-bell"></i><span class="d-lg-none">Alerts<span
+                            class="badge badge-pill badge-warning">6 New</span></span><span
+                        class="indicator text-warning d-none d-lg-block"><i class="fa fa-fw fa-circle"></i></span></a>
+                <div class="dropdown-menu dropdown-alerts" aria-labelledby="alertsDropdown"><a class="dropdown-item"
+                        href="#"><span><i class="fa fa-comment fa-fw"></i></span>New Comment<span
+                            class="small ml-auto d-lg-ml-3 text-muted">4 minutes ago</span></a><a class="dropdown-item"
+                        href="#"><span><i class="fa fa-twitter fa-fw"></i></span>3 New Followers<span
+                            class="small ml-auto d-lg-ml-3 text-muted">12 minutes ago</span></a><a class="dropdown-item"
+                        href="#"><span><i class="fa fa-envelope fa-fw"></i></span>Message Sent<span
+                            class="small ml-auto d-lg-ml-3 text-muted">4 minutes ago</span></a><a class="dropdown-item"
+                        href="#"><span><i class="fa fa-upload fa-fw"></i></span>Server Rebooted<span
+                            class="small ml-auto d-lg-ml-3 text-muted">4 minutes ago</span></a><a class="dropdown-item"
+                        href="#"><span><i class="fa fa-tasks fa-fw"></i></span>New Task<span
+                            class="small ml-auto d-lg-ml-3 text-muted">4 minutes ago</span></a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item text-center" href="#"><strong>See All
+                            Alerts</strong><i class="fa fa-angle-right"></i></a>
+                </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle mr-lg-2" id="settingsDropdown" href="#"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fa fa-user fa-fw"></i><span>secondtruth</span><span
+                        class="indicator text-primary d-none d-lg-block"><i class="fa fa-fw fa-circle"></i></span></a>
+                <div class="dropdown-menu dropdown-user" aria-labelledby="settingsDropdown"><a class="dropdown-item"
+                        href="/admin/userprofile"><i class="fa fa-user fa-fw"></i>User Profile</a><a class="dropdown-item"
+                        href="#"><i class="fa fa-gear fa-fw"></i>Settings</a><a class="dropdown-item" href="/admin/logout"
+                        data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
